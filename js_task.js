@@ -81,3 +81,103 @@ function displayVariable(){
     alert(result);
     
 }
+function diplayOneToFive(){
+  for (let i = 0; i <= 5; i++){
+    alert(i);
+  }
+}
+function diplayOneToFive1(){
+  let r = "";
+  for (let i = 0; i <= 5; i++){
+    r +=i + "\n";
+
+  }
+  alert(r);
+}
+function multiplies(){
+  let r = "";
+  for (let i = 0; i <= 20; i++){
+    if(i%3 === 0){
+      r+=i + ",";
+    }
+    
+  }
+  alert(r);
+}
+
+function hundredNumber(){
+  while(true){
+    userInput = prompt("Enter your number between (0-100): ");
+    const number = parseInt(userInput);
+
+    if (userInput === null){
+      alert("User canceled input.");
+      break;
+    }
+
+    if (number >=0 && number <=100){
+      alert(`Your number is ${number}`);
+      
+    }
+    else {
+      alert("Please enter valid number .");
+    }
+  }
+}
+
+
+function hundredNumberAndMore(){
+  
+  while(true) {
+
+    userInput = prompt("Please enter your input: ");
+    
+
+    if (userInput === null){
+      alert("User canceled the input: ");
+      break;
+
+    }
+
+    if (isNaN(userInput) || userInput >= 0 || userInput <= 100){
+      alert(`Your input is ${userInput}`);
+      
+    }
+    else{
+      alert("Reload the page");
+    }
+  
+  }
+}
+
+function sumOfNumbers(){
+  
+  
+    const userInput = prompt("Enter your number: ");
+    
+    let sum = 0;
+    for(let i =0; i <= userInput; i++){
+      
+      sum +=i;
+      
+    }
+    
+    alert(sum);
+  
+}
+
+function avgNumbers(){
+    let userInput = prompt("Enter your number: ");
+    const number = parseInt(userInput);
+    let sum = 0;
+    for(let i =0; i <= number; i++){
+      
+      sum +=i;
+      
+      
+    }
+    const avg = sum / (number + 1);
+    alert(avg);
+
+
+}
